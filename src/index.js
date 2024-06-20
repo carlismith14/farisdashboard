@@ -30,8 +30,58 @@ const theme = createTheme({
     },
   },
   typography: {
+    // fontSize: "2rem",
     myVariant: {
       fontSize: "6rem",
+    },
+  },
+
+  components: {
+    MuiMenuItem: {
+      styleOverrides: {
+        root: {
+          paddingTop: "10px",
+          paddingBottom: "10px",
+        },
+        gutters: {
+          paddingRight: "50px",
+        },
+      },
+    },
+    MuiToggleButton: {
+      styleOverrides: {
+        label: {
+          // color: "#0e355a",
+        },
+        root: {
+          "&.Mui-selected": {
+            // backgroundColor: "#8f9aa8",
+            backgroundColor: "purple",
+          },
+        },
+      },
+    },
+
+    MuiIconButton: {
+      styleOverrides: {
+        root: {
+          "&:hover": {
+            // backgroundColor: "rgba(158, 158, 158, 0.2)",
+          },
+        },
+      },
+    },
+
+    MuiTableRow: {
+      styleOverrides: {
+        root: {
+          "& th:fist-child": {
+            // borderTopLeftRadius: "10px",
+            // borderBottomLeftRadius: "10px",
+            
+          },
+        },
+      },
     },
   },
 });
