@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+
+import { Button, Container, Typography } from "@mui/material";
+import { styled } from "@mui/material";
+
+import { Desktop, Mobile } from "./components/utility/responsive";
+import DataPage from "./components/DataPage";
+import LeftPanel3 from "./components/LeftPanel3";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <Desktop>
+        <LeftPanel3></LeftPanel3>
+      </Desktop>
+
+      <Mobile>
+        <DataPage></DataPage>
+      </Mobile>
     </div>
   );
 }
