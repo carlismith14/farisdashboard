@@ -36,7 +36,6 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 import {
   CustomViewIcon,
-  DownloadIcon,
   MinimalViewIcon,
   ArrowLeftIcon,
 } from "./utility/CustomIcons";
@@ -480,10 +479,7 @@ const DataPage = () => {
                 height: "64px",
                 padding: "8px",
                 zIndex: 1,
-                "& .internal": {
-                  fontSize: "10px",
-                  margin: "0px 8px",
-                },
+
                 "& button": {
                   color: "white",
                 },
@@ -750,7 +746,6 @@ const DataPage = () => {
                     component={Paper}
                     sx={{
                       margin: "auto",
-                      // maxHeight: "55vh",
                       maxHeight: "56vh",
 
                       backgroundColor: "inherit",
@@ -1354,21 +1349,22 @@ const DataPage = () => {
                                 }}
                               >
                                 <Box
-                                  sx={{
-                                    // bgcolor: "#0e355a",
-                                    color: "white",
-                                    paddingTop: "16px",
-                                    paddingBottom: "16px",
-                                    paddingLeft: "16px",
-                                    paddingRight: "0px",
-                                    height: "52.02px",
-                                    width: "100%",
-
-                                    whiteSpace: "nowrap",
-                                    overflow: "hidden",
-                                    textOverflow: "ellipsis",
-                                    borderStyle: "border-box",
-                                  }}
+                                  sx={
+                                    {
+                                      // bgcolor: "#0e355a",
+                                      // color: "white",
+                                      // paddingTop: "16px",
+                                      // paddingBottom: "16px",
+                                      // paddingLeft: "16px",
+                                      // paddingRight: "0px",
+                                      // height: "52.02px",
+                                      // width: "100%",
+                                      // whiteSpace: "nowrap",
+                                      // overflow: "hidden",
+                                      // textOverflow: "ellipsis",
+                                      // borderStyle: "border-box",
+                                    }
+                                  }
                                 >
                                   {/* {row.title} */}
                                   {row.title
@@ -1389,124 +1385,126 @@ const DataPage = () => {
                                 }}
                               >
                                 <Box
-                                  sx={{
-                                    bgcolor: "#0e355a",
-                                    color: "white",
-                                    paddingTop: "16px",
-                                    paddingBottom: "16px",
-                                    paddingLeft: "16px",
-                                    paddingRight: "0px",
-                                    height: "52.02px",
-
-                                    width: "100%",
-
-                                    whiteSpace: "nowrap",
-                                    overflow: "hidden",
-                                    textOverflow: "ellipsis",
-                                    borderStyle: "border-box",
-                                  }}
+                                  sx={
+                                    {
+                                      // bgcolor: "#0e355a",
+                                      // color: "white",
+                                      // paddingTop: "16px",
+                                      // paddingBottom: "16px",
+                                      // paddingLeft: "16px",
+                                      // paddingRight: "0px",
+                                      // height: "52.02px",
+                                      // width: "100%",
+                                      // whiteSpace: "nowrap",
+                                      // overflow: "hidden",
+                                      // textOverflow: "ellipsis",
+                                      // borderStyle: "border-box",
+                                    }
+                                  }
                                 >
                                   {row.contentType}
                                 </Box>
                               </TableCell>
                               <TableCell
                                 sx={{
-                                  borderBottom: "none",
-                                  color: "inherit",
+                                  // borderBottom: "none",
+                                  // color: "inherit",
                                   width: "10%",
 
-                                  whiteSpace: "nowrap",
-                                  overflow: "hidden",
-                                  textOverflow: "ellipsis",
-                                  borderStyle: "border-box",
+                                  // whiteSpace: "nowrap",
+                                  // overflow: "hidden",
+                                  // textOverflow: "ellipsis",
+                                  // borderStyle: "border-box",
                                 }}
                               >
                                 <Box
-                                  sx={{
-                                    bgcolor: "#0e355a",
-                                    color: "white",
-                                    paddingTop: "16px",
-                                    paddingBottom: "16px",
-                                    paddingLeft: "16px",
-                                    paddingRight: "0px",
-                                    height: "52.02px",
-                                    width: "100%",
-
-                                    whiteSpace: "nowrap",
-                                    overflow: "hidden",
-                                    textOverflow: "ellipsis",
-                                    borderStyle: "border-box",
-                                  }}
+                                  sx={
+                                    {
+                                      // bgcolor: "#0e355a",
+                                      // color: "white",
+                                      // paddingTop: "16px",
+                                      // paddingBottom: "16px",
+                                      // paddingLeft: "16px",
+                                      // paddingRight: "0px",
+                                      // height: "52.02px",
+                                      // width: "100%",
+                                      // whiteSpace: "nowrap",
+                                      // overflow: "hidden",
+                                      // textOverflow: "ellipsis",
+                                      // borderStyle: "border-box",
+                                    }
+                                  }
                                 >
                                   {row.dateShared}
                                 </Box>
                               </TableCell>
                               <TableCell
                                 sx={{
-                                  borderBottom: "none",
-                                  color: "inherit",
+                                  // borderBottom: "none",
+                                  // color: "inherit",
                                   maxWidth: 25,
                                   width: "25%",
 
-                                  whiteSpace: "nowrap",
-                                  overflow: "hidden",
-                                  textOverflow: "ellipsis",
-                                  borderStyle: "border-box",
+                                  // whiteSpace: "nowrap",
+                                  // overflow: "hidden",
+                                  // textOverflow: "ellipsis",
+                                  // borderStyle: "border-box",
                                 }}
                               >
                                 <Box
-                                  sx={{
-                                    bgcolor: "#0e355a",
-                                    color: "white",
-                                    paddingTop: "16px",
-                                    paddingBottom: "16px",
-                                    paddingLeft: "16px",
-                                    paddingRight: "0px",
-                                    height: "52.02px",
-                                    width: "100%",
-
-                                    whiteSpace: "nowrap",
-                                    overflow: "hidden",
-                                    textOverflow: "ellipsis",
-                                    borderStyle: "border-box",
-                                  }}
+                                  sx={
+                                    {
+                                      // bgcolor: "#0e355a",
+                                      // color: "white",
+                                      // paddingTop: "16px",
+                                      // paddingBottom: "16px",
+                                      // paddingLeft: "16px",
+                                      // paddingRight: "0px",
+                                      // height: "52.02px",
+                                      // width: "100%",
+                                      // whiteSpace: "nowrap",
+                                      // overflow: "hidden",
+                                      // textOverflow: "ellipsis",
+                                      // borderStyle: "border-box",
+                                    }
+                                  }
                                 >
                                   {row.recipients}
                                 </Box>
                               </TableCell>
                               <TableCell
                                 sx={{
-                                  borderBottom: "none",
-                                  color: "inherit",
+                                  // borderBottom: "none",
+                                  // color: "inherit",
                                   width: "10%",
                                   paddingRight: "8px",
 
-                                  whiteSpace: "nowrap",
-                                  overflow: "hidden",
-                                  textOverflow: "ellipsis",
-                                  borderStyle: "border-box",
+                                  // whiteSpace: "nowrap",
+                                  // overflow: "hidden",
+                                  // textOverflow: "ellipsis",
+                                  // borderStyle: "border-box",
                                 }}
                                 component="th"
                               >
                                 <Box
-                                  sx={{
-                                    bgcolor: "#0e355a",
-                                    color: "white",
-                                    paddingTop: "16px",
-                                    paddingBottom: "16px",
-                                    paddingLeft: "16px",
-                                    // paddingRight: "0px",
-
-                                    height: "52.02px",
-                                    width: "100%",
-                                    borderTopRightRadius: "10px",
-                                    borderBottomRightRadius: "10px",
-
-                                    whiteSpace: "nowrap",
-                                    overflow: "hidden",
-                                    textOverflow: "ellipsis",
-                                    borderStyle: "border-box",
-                                  }}
+                                  sx={
+                                    {
+                                      // bgcolor: "#0e355a",
+                                      // color: "white",
+                                      // paddingTop: "16px",
+                                      // paddingBottom: "16px",
+                                      // paddingLeft: "16px",
+                                      // // paddingRight: "0px",
+                                      // height: "52.02px",
+                                      // width: "100%",
+                                      // borderTopRightRadius: "10px",
+                                      // borderBottomRightRadius: "10px",
+                                      // whiteSpace: "nowrap",
+                                      // overflow: "hidden",
+                                      // textOverflow: "ellipsis",
+                                      // borderStyle: "border-box",
+                                    }
+                                  }
                                 >
                                   {row.lastViewed}
                                 </Box>

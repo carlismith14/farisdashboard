@@ -78,7 +78,6 @@ const theme = createTheme({
           "& th:fist-child": {
             // borderTopLeftRadius: "10px",
             // borderBottomLeftRadius: "10px",
-            
           },
         },
       },
