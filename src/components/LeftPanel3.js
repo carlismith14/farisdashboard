@@ -27,30 +27,16 @@ import {
 
 import logoImgSrc from "../img/Faris-white.png";
 
-import {
-  CustomViewIcon,
-  DownloadIcon,
-  MinimalViewIcon,
-  ArrowLeftIcon,
-} from "./utility/CustomIcons";
 
-import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
-import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
-import LastPageIcon from "@mui/icons-material/LastPage";
-import FirstPageIcon from "@mui/icons-material/FirstPage";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+
 // import IconButton from '@mui/material/IconButton';
 
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
-import AccessTimeFilledIcon from "@mui/icons-material/AccessTimeFilled";
-import HomeIcon from "@mui/icons-material/Home";
+
 
 import GroupIcon from "@mui/icons-material/Group";
-import GroupAddIcon from "@mui/icons-material/GroupAdd";
 
 import StarIcon from "@mui/icons-material/Star";
-import StarBorderIcon from "@mui/icons-material/StarBorder";
 import Home from "@mui/icons-material/Home";
 import DeleteIcon from "@mui/icons-material/Delete";
 
@@ -216,18 +202,34 @@ export default function LeftPanel3() {
 
               <Box
                 sx={{
-                  background: abiomedColors.mmPrimaryRoyal,
+                  //  background: abiomedColors.mmPrimaryRoyal,
+                  background: "#d9d9d9",
+                  alignSelf: "center",
                   width: "1px",
-                  height: "100%",
+                  height: "80%",
+                  marginRight: "2em",
                 }}
               ></Box>
 
               <Box
                 sx={{
                   position: "relative",
-                  top: "-4px",
+                  // top: "-4px",
+                  display: "flex",
+                  alignItems: "center",
+                  flexDirection: "column",
                 }}
               >
+                {/* <Box
+                    sx={{
+                      //  background: abiomedColors.mmPrimaryRoyal,
+                      background: "#d9d9d9",
+
+                      width: "1px",
+                      height: "80%",
+                      marginRight:"2em",
+                    }}
+                  ></Box> */}
                 <Typography
                   sx={{
                     margin: 0,
@@ -241,16 +243,21 @@ export default function LeftPanel3() {
                       border: "none",
                       cursor: "pointer",
                       fontFamily: '"Source Sans Pro", sans-serif',
-                      fontSize: "14px",
+                      fontSize: "12px",
                       fontWeight: "normal",
                       textDecoration: "underline",
+                      paddingLeft: "0",
                     },
                   }}
                 >
                   <span>Good Afternoon, User !</span>
+
+                  <Box>
+                    <button type="button">logout</button>
+                  </Box>
                 </Typography>
 
-                <button type="button">logout</button>
+                {/* <button type="button">logout</button> */}
 
                 <p>
                   <span></span>
