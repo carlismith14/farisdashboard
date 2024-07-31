@@ -4,7 +4,6 @@ import MuiDrawer from "@mui/material/Drawer";
 import MuiAppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import List from "@mui/material/List";
-import CssBaseline from "@mui/material/CssBaseline";
 import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -18,21 +17,12 @@ import ListItemText from "@mui/material/ListItemText";
 import DataPage from "./DataPage";
 import { Stack, Box, Typography } from "@mui/material";
 
-import {
-  abiomedColors,
-  desktopGlobals,
-  drawerStyles,
-  searchField,
-} from "./constants/styles";
+import { desktopGlobals } from "./constants/styles";
 
 import logoImgSrc from "../img/Faris-white.png";
 
 
-
-// import IconButton from '@mui/material/IconButton';
-
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
-
 
 import GroupIcon from "@mui/icons-material/Group";
 

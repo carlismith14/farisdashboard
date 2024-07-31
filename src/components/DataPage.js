@@ -208,13 +208,6 @@ function TablePaginationActions(props) {
   );
 }
 
-// TablePaginationActions.propTypes = {
-//   count: PropTypes.number.isRequired,
-//   page: PropTypes.number.isRequired,
-//   rowsPerPage: PropTypes.number.isRequired,
-//   onPageChange: PropTypes.func.isRequired,
-// };
-
 function descendingComparator(a, b, orderBy) {
   if (b[orderBy] < a[orderBy]) {
     return -1;
@@ -279,10 +272,7 @@ const DataPage = () => {
       setIsFetching(true);
       try {
         const response = await fetch(
-          // "https://jsonplaceholder.typicode.com/comments"
           "https://my.api.mockaroo.com/ace.json?key=dbd7cf20"
-          // "https://mocki.io/v1/7fae2147-c31b-43fd-b86d-4a51bf031e6a"
-          // "https://run.mocky.io/v3/67c3fd59-8f3b-431c-9f31-b9d0a0a29891"
         );
         const result = await response.json();
 
@@ -903,7 +893,6 @@ const DataPage = () => {
               width: "100%",
               height: "64px",
               padding: "8px 28px",
-              // padding:"16px",
               marginTop: "20px",
               zIndex: 1,
 
@@ -952,20 +941,16 @@ const DataPage = () => {
                 padding: "0 16px",
                 "& div": {
                   fontSize: "14px",
-                  // fontWeight: "600",
-                  // lineHeight:"17.6px"
+             
                 },
                 "& p": {
                   fontSize: "14px",
-                  // fontWeight: "600",
-                  // lineHeight:"17.6px"
+            
                 },
                 "& span": {
                   fontSize: "14px",
-                  // fontWeight: "600",
                 },
               }}
-              // className={classes.contentSection}
             >
               <Stack
                 sx={{
@@ -1181,8 +1166,7 @@ const DataPage = () => {
                           </TableCell>
                           <TableCell
                             sx={{
-                              // maxWidth: "7%",
-                              // width: "5%",
+                             
                               width: "auto",
                               lineHeight: "18px",
                             }}
@@ -1204,10 +1188,7 @@ const DataPage = () => {
                           </TableCell>
                           <TableCell
                             sx={{
-                              // width: "5%",
                               width: "auto",
-
-                              // width: "10%",
                               lineHeight: "18px",
                             }}
                             sortDirection={
@@ -1304,11 +1285,8 @@ const DataPage = () => {
                             >
                               <TableCell
                                 sx={{
-                                  // borderBottom: "none",
-                                  // color: "inherit",
                                   width: "10%",
                                   maxWidth: "50px",
-                                  // backgroundColor:"red"
                                 }}
                                 component="th"
                                 id={labelId}
@@ -1316,21 +1294,10 @@ const DataPage = () => {
                               >
                                 <Box
                                   sx={{
-                                    // bgcolor: "#0e355a",
-                                    // color: "white",
-                                    // paddingTop: "16px",
-                                    // paddingBottom: "16px",
-                                    // paddingLeft: "16px",
-                                    // paddingRight: "0px",
-                                    // height: "52.02px",
-                                    // width: "100%",
+                                  
                                     borderTopLeftRadius: "10px",
                                     borderBottomLeftRadius: "10px",
 
-                                    // whiteSpace: "nowrap",
-                                    // overflow: "hidden",
-                                    // textOverflow: "ellipsis",
-                                    // borderStyle: "border-box",
                                   }}
                                 >
                                   {row.vaultId}
@@ -1338,36 +1305,16 @@ const DataPage = () => {
                               </TableCell>
                               <TableCell
                                 sx={{
-                                  // borderBottom: "none",
-                                  // color: "inherit",
+                               
                                   width: "30%",
                                   maxWidth: "70px",
 
-                                  // whiteSpace: "nowrap",
-                                  // overflow: "hidden",
-                                  // textOverflow: "ellipsis",
-                                  // borderStyle: "border-box",
+                              
                                 }}
                               >
                                 <Box
-                                  sx={
-                                    {
-                                      // bgcolor: "#0e355a",
-                                      // color: "white",
-                                      // paddingTop: "16px",
-                                      // paddingBottom: "16px",
-                                      // paddingLeft: "16px",
-                                      // paddingRight: "0px",
-                                      // height: "52.02px",
-                                      // width: "100%",
-                                      // whiteSpace: "nowrap",
-                                      // overflow: "hidden",
-                                      // textOverflow: "ellipsis",
-                                      // borderStyle: "border-box",
-                                    }
-                                  }
+                               
                                 >
-                                  {/* {row.title} */}
                                   {row.title
                                     .split(" ")
                                     .map(
@@ -1386,89 +1333,36 @@ const DataPage = () => {
                                 }}
                               >
                                 <Box
-                                  sx={
-                                    {
-                                      // bgcolor: "#0e355a",
-                                      // color: "white",
-                                      // paddingTop: "16px",
-                                      // paddingBottom: "16px",
-                                      // paddingLeft: "16px",
-                                      // paddingRight: "0px",
-                                      // height: "52.02px",
-                                      // width: "100%",
-                                      // whiteSpace: "nowrap",
-                                      // overflow: "hidden",
-                                      // textOverflow: "ellipsis",
-                                      // borderStyle: "border-box",
-                                    }
-                                  }
+                             
                                 >
                                   {row.contentType}
                                 </Box>
                               </TableCell>
                               <TableCell
                                 sx={{
-                                  // borderBottom: "none",
-                                  // color: "inherit",
+                           
                                   width: "10%",
 
-                                  // whiteSpace: "nowrap",
-                                  // overflow: "hidden",
-                                  // textOverflow: "ellipsis",
-                                  // borderStyle: "border-box",
+                             
                                 }}
                               >
                                 <Box
-                                  sx={
-                                    {
-                                      // bgcolor: "#0e355a",
-                                      // color: "white",
-                                      // paddingTop: "16px",
-                                      // paddingBottom: "16px",
-                                      // paddingLeft: "16px",
-                                      // paddingRight: "0px",
-                                      // height: "52.02px",
-                                      // width: "100%",
-                                      // whiteSpace: "nowrap",
-                                      // overflow: "hidden",
-                                      // textOverflow: "ellipsis",
-                                      // borderStyle: "border-box",
-                                    }
-                                  }
+                                  
                                 >
                                   {row.dateShared}
                                 </Box>
                               </TableCell>
                               <TableCell
                                 sx={{
-                                  // borderBottom: "none",
-                                  // color: "inherit",
+                              
                                   maxWidth: 25,
                                   width: "25%",
 
-                                  // whiteSpace: "nowrap",
-                                  // overflow: "hidden",
-                                  // textOverflow: "ellipsis",
-                                  // borderStyle: "border-box",
+                                 
                                 }}
                               >
                                 <Box
-                                  sx={
-                                    {
-                                      // bgcolor: "#0e355a",
-                                      // color: "white",
-                                      // paddingTop: "16px",
-                                      // paddingBottom: "16px",
-                                      // paddingLeft: "16px",
-                                      // paddingRight: "0px",
-                                      // height: "52.02px",
-                                      // width: "100%",
-                                      // whiteSpace: "nowrap",
-                                      // overflow: "hidden",
-                                      // textOverflow: "ellipsis",
-                                      // borderStyle: "border-box",
-                                    }
-                                  }
+                              
                                 >
                                   {row.recipients}
                                 </Box>
