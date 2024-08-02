@@ -563,7 +563,7 @@ const DataPage = () => {
                   </FormControl>
                 </Stack>
 
-                <FormControl width="100%" component={Stack}>
+                {/* <FormControl width="100%" component={Stack}>
                   <FormControlLabel
                     control={
                       <SwitchTextTrack
@@ -588,7 +588,7 @@ const DataPage = () => {
                       },
                     }}
                   />
-                </FormControl>
+                </FormControl> */}
 
                 <Stack
                   direction="row"
@@ -867,7 +867,9 @@ const DataPage = () => {
                                     <Typography>
                                       Viewed
                                       {": "}
-                                      {row.lastViewed}
+                                      {/* {row.lastViewed} */}
+                                      {row.viewedByCustomer ? "Yes" : "No"}
+
                                     </Typography>
                                   </Stack>
                                 </AccordionDetails>
@@ -1022,7 +1024,7 @@ const DataPage = () => {
                       },
                   }}
                 >
-                  <FormControl
+                  {/* <FormControl
                     sx={{
                       display: "flex",
                       flexDirection: "column",
@@ -1047,7 +1049,7 @@ const DataPage = () => {
                           },
                       }}
                     />
-                  </FormControl>
+                  </FormControl> */}
                 </Stack>
               </Stack>
 
@@ -1236,10 +1238,16 @@ const DataPage = () => {
                             component="th"
                           >
                             <TableSortLabel
-                              active={orderBy === "lastViewed"}
-                              onClick={createSortHandler("lastViewed")}
+                              // active={orderBy === "lastViewed"}
+                              // onClick={createSortHandler("lastViewed")}
+                              // direction={
+                              //   orderBy !== "lastViewed" ? "desc" : order
+                              // }
+
+                              active={orderBy === "viewedByCustomer"}
+                              onClick={createSortHandler("viewedByCustomer")}
                               direction={
-                                orderBy !== "lastViewed" ? "desc" : order
+                                orderBy !== "viewedByCustomer" ? "desc" : order
                               }
                               IconComponent={KeyboardArrowDownIcon}
                             >
@@ -1365,6 +1373,7 @@ const DataPage = () => {
                               
                                 >
                                   {row.recipients}
+                                  {/* {row.emailedToSelf ? "self" : row.recipients} */}
                                 </Box>
                               </TableCell>
                               <TableCell
@@ -1401,7 +1410,8 @@ const DataPage = () => {
                                     }
                                   }
                                 >
-                                  {row.lastViewed}
+                                  {/* {row.lastViewed} */}
+                                  {row.viewedByCustomer ? "Yes" : "No"}
                                 </Box>
                               </TableCell>
                             </TableRow>
