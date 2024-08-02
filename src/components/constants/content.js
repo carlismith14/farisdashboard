@@ -267,7 +267,6 @@ export const contentItemActions = {
   ITEM_SEND_TO_PRINTSHOP: 26,
 };
 
-// might not need ALL in 3.0, need to confirm
 export const contentTypeLabels = {
   [contentTypes.ALL]: 'S_ALL_TYPES',
   [contentTypes.PRS]: 'S_DECKS',
@@ -279,13 +278,13 @@ export const contentTypeLabels = {
 };
 
 export const timeSpanLabels = {
-  1: 'S_TODAY',
+  // 1: 'S_TODAY',
   7: 'S_LAST_7_DAYS',
   30: 'S_LAST_30_DAYS',
   90: 'S_LAST_3_MONTHS',
   180: 'S_LAST_6_MONTHS',
   365: 'S_LAST_12_MONTHS',
-  '-1': 'S_YEAR_TO_DATE',
+  // '-1': 'S_YEAR_TO_DATE',
   0: 'S_ALL_TIME',
 };
 
